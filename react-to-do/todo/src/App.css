@@ -9,3 +9,99 @@ body {
   background-color: rgb(69, 69, 69);
   color: rgb(253, 253, 253);
 }
+.card1{
+  width: 700px;
+  height: 100px;
+  border-radius: 8px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+}
+.card1:hover{
+  transform: scaleX(.98);
+  -webkit-transform: scaleX(.98);
+  -moz-transform: scaleX(.98);
+  -ms-transform: scaleX(.98);
+  -o-transform: scaleX(.98);
+}
+label span{
+  display: inline-block;
+  padding: 0 5px;
+}
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal_card{
+  width: 650px;
+  height: 300px;
+  background-color: black;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+label input{
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  border: navajowhite;
+  margin: 13px 0;
+}
+.container{
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.btn{
+  width: 100%;
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.add-btndiv{
+  width: 700px;
+  margin: 0 auto;
+}
+.add-btndiv2{
+  width: 100%;
+  margin: 0 auto;
+}
+.btn{
+  cursor: pointer;
+}
