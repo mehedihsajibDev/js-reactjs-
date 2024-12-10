@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container } from '../../styles/Common.styled'
-import rightimg from '../../images/right.jpg'
+import rightimg from '../../images/right.png'
 import { Herosection } from '../../styles/Hero.styled'
 
 export default function Hero() {
