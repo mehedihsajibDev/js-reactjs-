@@ -3,7 +3,7 @@ import { Container } from '../styles/common.styled'
 import { Navdiv } from '../styles/maincss.styled'
 
 
-export default function Navbar() {
+export default function Navbar({uncat}) {
   return (
        <Container>
           <Navdiv>
@@ -11,15 +11,13 @@ export default function Navbar() {
                 <div className='item'>
                   All
                 </div>
-                <div className='item'>
-                  Fruits
-                </div>
-                <div className='item'>
-                  Gadget
-                </div>
-                <div className='item'>
-                  Cloth
-                </div>
+                  {
+                    uncat.map(name=>(
+                      <div className='item'>
+                       {name}
+                      </div>
+                    ))
+                  }
               </div>
           </Navdiv>
        </Container>

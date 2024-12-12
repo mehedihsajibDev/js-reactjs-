@@ -34,7 +34,7 @@ export const Card=styled.div`
 
    img{
     width: 200px;
-    height: auto;
+    height: 200px;
     border-radius: 6px;
    }
    .info{
