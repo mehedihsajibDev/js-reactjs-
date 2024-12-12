@@ -7,7 +7,7 @@ export default function Cards({data}) {
       <Display>
         {
             data.map(items=>(
-              <Card>
+              <Card key={items.id}>
                 <div className='img'>
                   <img src={items.img} alt="cloths"/>
                 </div>

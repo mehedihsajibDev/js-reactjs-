@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from './Navbar'
 import Cards from './Cards'
 import jacket from '../assets/jacket.jpg'
@@ -47,12 +47,14 @@ const data=[
 ]
 
 export default function Products() {
+  let[alldata, setallData]=useState(data)
+
   let ucat=[...new Set(data.map(item=> item.category))];
 
   return (
     <div>
-        <Navbar uncat={ucat}></Navbar>
-        <Cards data={data}></Cards>
+        <Navbar uncat={ucat} data={data} setallData={setallData}></Navbar>
+        <Cards data={alldata}></Cards>
     </div>
   )
 }
