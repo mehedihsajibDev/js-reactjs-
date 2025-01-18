@@ -21,4 +21,7 @@ export const Navigation = styled.nav`
     font-size: 18px;
     color: #464545ff;
   }
+  @media (max-width:${({theme})=>theme.mobile}){
+   flex-direction: column;
+  }
 `
