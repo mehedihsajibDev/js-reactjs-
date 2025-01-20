@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navitem from './Navitem'
 import jacket from "../../images/jacket.jpg"
 import iphone from "../../images/iphone.png"
 import phone from "../../images/phone.jpg"
 import apple from "../../images/apple.jpg"
 import orange from "../../images/orange.jpg"
+import ItemCard from './ItemCard'
 
 const data=[
   {
@@ -46,10 +47,11 @@ const data=[
 
 export default function Product() {
   let uniqueCategory = [...new Set(data.map(item => item.category))];
-   console.log(uniqueCategory)
+  const [alldata, setdata]=useState(data)
   return (
     <>
-      <Navitem data={data}></Navitem>
+      <Navitem  uniqueCategory={uniqueCategory} data={data} setdata={setdata}></Navitem>
+      <ItemCard data={alldata}></ItemCard>
     </>
   )
 }

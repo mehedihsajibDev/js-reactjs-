@@ -33,3 +33,18 @@ export const Navigation=styled.nav`
     }
   }
 `
+export const Cardlayout= styled.div`
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+`
+export const CardItem= styled.div`
+  width:290px;
+  border-radius: 7px;
+  background-color: ${({theme})=>theme.color.white};
+  
+  img{
+    width: 100%;
+  }
+`
