@@ -1,12 +1,12 @@
 
 import { ThemeProvider } from 'styled-components';
-import Home from './pages/Home';
+import Product from './pages/components/Product';
 
 const Theme={
   color:{
     black:"#575757",
-    white:"#000000ff",
-    c3:"#514545ff"
+    white:"#ffffffff",
+    navcolor:"#81c8f7ff"
   },
    mobile:"980px",
    smalldevice:"580px"
@@ -19,7 +19,7 @@ function App() {
     
     <ThemeProvider theme={Theme}>
       <div className="App">
-      <Home></Home>
+      <Product></Product>
       </div>
 
   </ThemeProvider>

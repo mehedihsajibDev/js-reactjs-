@@ -44,8 +44,8 @@ export default function Features() {
                         <FeatureCard bgcolor={item.bgcolor} color={item.color}>
                             <img src={item.img} alt="img"/>
                             <div className='caption'>
-                                <p>{item.name}</p>
-                            </div>
+                                <p>{item.nallme}</p>
+                            </div>lll
                         </FeatureCard>
                       ))
                     }
