@@ -14,6 +14,22 @@ export const CardSection=styled.div`
   width: 1200px;
   margin: 0 auto;
   gap: 50px;
+
+
+input{
+    width: 431px;
+    padding: 16px;
+    border-radius: 8px;
+}
+`
+export const CardSectionp=styled.div`
+
+display: flex;
+  justify-content: center;
+  flex-direction:column;
+  width: 1200px;
+  margin: 0 auto;
+  gap: 50px;
 `
 export const Card=styled.div`
   width: 400px;
@@ -24,6 +40,23 @@ export const Card=styled.div`
   justify-content:center;
   border: 1px solid red;
   cursor: pointer;
+`
+export const Cardp=styled.div`
+  width: 100%;
+  background-color: antiquewhite;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid red;
+  cursor: pointer;
+  padding: 20px 0;
+  h2{
+    margin: 0;
+  }
+  p{
+    margin:10px;
+  }
 `
 export const Typography=styled.div`
 margin-top: 150px;

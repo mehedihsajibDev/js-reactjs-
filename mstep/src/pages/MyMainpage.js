@@ -18,13 +18,13 @@ export default function MyMainpage() {
             page===1 && <Firspage setpage={setpage}></Firspage>
         }
          {
-            page===2 &&  <Secondpage></Secondpage>
+            page===2 &&  <Secondpage setpage={setpage}></Secondpage>
         }
          {
-            page===3 && <ThirdPage></ThirdPage>
+            page===3 && <ThirdPage setpage={setpage}></ThirdPage>
         }
          {
-            page===4 && <Previewpage></Previewpage>
+            page===4 && <Previewpage setpage={setpage}></Previewpage>
         }
 
         <Footer></Footer>
