@@ -1,6 +1,8 @@
 
 import { ThemeProvider } from 'styled-components';
-import Product from './pages/components/Product';
+
+
+import MyMainpage from './pages/MyMainpage';
 
 const Theme={
   color:{
@@ -19,7 +21,8 @@ function App() {
     
     <ThemeProvider theme={Theme}>
       <div className="App">
-      <Product></Product>
+    
+      <MyMainpage></MyMainpage>
       </div>
 
   </ThemeProvider>

@@ -8,6 +8,7 @@ export default function Home() {
     <Homesection>
         <Topbar></Topbar>
         <Features></Features>
+        
     </Homesection>
    
   )
